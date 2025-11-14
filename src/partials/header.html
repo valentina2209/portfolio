@@ -1,0 +1,60 @@
+<!-- розмітка хедера -->
+<header class="header">
+  <div class="container header-container">
+    <div class="logo-box">
+      <a href="index.html" class="logo-link">
+        <picture>
+          <source
+            srcset="./images/myPhoto@1x.webp 1x, ./images/myPhoto@2x.webp 2x"
+            media="(max-width:767px)"
+            type="image/webp"
+          />
+          <img
+            src="./images/myPhoto@1x.webp"
+            alt="logo"
+            class="header-logo"
+            width="75"
+            height="75"
+          />
+        </picture>
+        <span class="logo-header" data-i18n="second-name"></span>
+      </a>
+    </div>
+    <nav class="nav">
+      <div class="navbar">
+        <a class="nav-menu" href="#" data-i18n="menu"></a>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a class="menu-link" href="#about" data-i18n="ac-title"></a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#projects" data-i18n="projects"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="language-switcher">
+      <button id="lang-uk" class="lang-btn" data-i18n="lng"></button>
+      <button id="lang-en" class="lang-btn" data-i18n="lngs"></button>
+    </div>
+
+    <button
+      class="order-btn"
+      type="button"
+      aria-label="button order-project"
+      title="Order the project"
+      data-i18n="order"
+    ></button>
+    <button
+      aria-label="button open-menu"
+      type="button"
+      class="burger-btn js-open-menu"
+      title="Toggle menu"
+    >
+      <svg class="burger-icon" width="28" height="28">
+        <use href="images/icon.svg#icon-burger-menu"></use>
+      </svg>
+    </button>
+  </div>
+</header>

@@ -1,0 +1,136 @@
+.hero {
+  min-width: 320px;
+  padding: 32px 0;
+  position: relative;
+  overflow: hidden;
+  background-color: #333;
+}
+
+#hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-title {
+  margin-top: 249px; /*потім змінити і перенести до хедера */
+  align-items: center;
+  font-weight: 500;
+  font-size: clamp(44px, calc(10.91vw + 8.1px), 50px);
+  line-height: 1;
+  letter-spacing: -1.5px;
+  color: #fafafa;
+  text-transform: uppercase;
+  margin-bottom: 249px;
+  position: relative;
+  z-index: 1;
+}
+
+.wrap {
+  position: absolute;
+  right: 16px;
+  bottom: 32px;
+  width: calc(100vw - 24px);
+  position: relative;
+  z-index: 1;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.social-items {
+  color: #fafafa;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  white-space: nowrap;
+  transition: border-color 0.3s ease;
+}
+
+.social-items:hover,
+.social-items:focus-within {
+  border-color: #fafafa;
+  outline: none;
+}
+
+.social-items:active {
+  border-color: #00adb5;
+  color: #00adb4;
+}
+
+.social-items a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  outline: none;
+}
+
+.style {
+  display: flex;
+  padding: 8px 8px;
+  border-radius: 60px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+/* Style tablet */
+@media only screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    padding: 32px 0;
+  }
+
+  .hero-title {
+    width: 632px;
+    font-size: 90px;
+    letter-spacing: -2.7px;
+    margin-bottom: 187px;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+  }
+
+  .wrap {
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+    width: calc(100vw - 64px);
+  }
+}
+
+/* Desktop (1440px) */
+@media only screen and (min-width: 1440px) {
+  .hero {
+    max-width: 1440px;
+  }
+
+  .hero-title {
+    width: 1084px;
+    margin-bottom: 243px;
+  }
+  .wrap-title {
+    padding: 0 178px;
+  }
+}

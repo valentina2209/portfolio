@@ -1,0 +1,183 @@
+.covers-container {
+  padding: 0;
+}
+
+.covers {
+  position: relative;
+  height: 508px;
+  overflow: hidden;
+  background-image: url('../images/mobile/covers/bg-mobile@1x.png'),
+    url('../images/mobile/covers/bg-mobile@1x.png');
+  background-repeat: no-repeat;
+  background-position: left 80px top 150px, right 20px bottom 115px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .covers {
+    background-image: url('../images/mobile/covers/bg-mobile@2x.png'),
+      url('../images/mobile/covers/bg-mobile@2x.png');
+    background-repeat: no-repeat;
+    background-position: left 120px top 250px, right 100px bottom 250px;
+    background-size: 100%;
+  }
+}
+
+.track {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(16deg);
+  transform-origin: center;
+  width: 1150px;
+}
+
+.away {
+  display: flex;
+  object-fit: none;
+  overflow: hidden;
+}
+
+.away > div {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.away:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.swiper-wrapper-covers,
+.swiper-wrapper-first,
+.swiper-wrapper-second,
+.swiper-wrapper-third,
+.swiper-wrapper-fourth,
+.swiper-wrapper-fifth {
+  display: flex;
+  transition-timing-function: linear;
+  width: auto;
+}
+
+.first-swiper-slide,
+.second-swiper-slide,
+.third-swiper-slide,
+.fourth-swiper-slide,
+.fifth-swiper-slide {
+  flex-shrink: 0;
+  width: auto;
+  display: block;
+  cursor: grab;
+}
+
+.first-swiper-slide:active,
+.second-swiper-slide:active,
+.third-swiper-slide:active,
+.fourth-swiper-slide:active,
+.fifth-swiper-slide:active {
+  cursor: grabbing;
+}
+
+.carousel-picture img {
+  width: 283px;
+  height: 163px;
+  max-width: none;
+}
+
+.go-top-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #ed3b44;
+  padding: 8px;
+  z-index: 999;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.go-top-button:hover,
+.go-top-button:focus-visible {
+  background-color: #e0373f;
+}
+.go-top-button:active {
+  background-color: #fafafa;
+}
+
+.go-top-icon {
+  fill: #fafafa;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.go-top-button:active .go-top-icon {
+  background-color: transparent;
+  fill: #e0373f;
+}
+
+.go-top-icon:active {
+  fill: #e0373f;
+}
+
+@media only screen and (min-width: 768px) {
+  .away:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .carousel-picture img {
+    width: 544px;
+    height: 314px;
+  }
+
+  .covers {
+    height: 960px;
+    background-position: right 250px bottom 600px, left 400px top 400px;
+  }
+
+  .track {
+    width: 2200px;
+  }
+
+  .go-top-button {
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .go-top-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .covers {
+    background-image: url('../images/mobile/covers/bg-mobile@1x.png'),
+      url('../images/mobile/covers/bg-mobile@1x.png'),
+      url('../images/mobile/covers/bg-mobile@1x.png');
+    background-repeat: no-repeat;
+
+    background-position: left 180px bottom 500px, right 950px bottom 220px,
+      left 900px top 450px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .covers {
+      background-image: url('../images/mobile/covers/bg-mobile@2x.png'),
+        url('../images/mobile/covers/bg-mobile@2x.png'),
+        url('../images/mobile/covers/bg-mobile@2x.png');
+      background-size: 50%;
+      background-position: left 180px bottom 500px, right 950px bottom 220px,
+        left 900px top 450px;
+    }
+  }
+}
