@@ -1,9 +1,9 @@
-@import '@fontsource/poppins/400.css'; /* Regular */
-@import '@fontsource/poppins/600.css'; /* SemiBold */
-@import '@fontsource/lato/400.css'; /* Regular */
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,700;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira%20Sans%20Extra%20Condensed:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite%20NG%20Modern:wght@400&display=swap');
 
 :root {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Vollkorn', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background: #1c1d20;

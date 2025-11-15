@@ -7,6 +7,7 @@
 }
 
 .about-main-subtitle {
+  font-family: 'Fira Sans Extra Condensed';
   font-weight: 500;
   font-size: 24px;
   line-height: 117%;
@@ -61,7 +62,7 @@ li.ac .ac-trigger::after {
 }
 
 h3.ac-title {
-  font-family: 'Inter Tight', sans-serif;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
@@ -90,7 +91,7 @@ h3.ac-title {
 }
 
 div.ac-panel {
-  font-weight: 500;
+  font-family: 'Fira Sans Extra Condensed';
   letter-spacing: -0.02em;
   color: #fafafa;
 }
@@ -127,8 +128,7 @@ div.ac-panel {
   align-items: center;
   justify-content: center;
   text-align: center;
-
-  font-weight: 500;
+  font-family: 'Fira Sans Extra Condensed';
   letter-spacing: -0.02em;
   color: #fafafa;
 

@@ -96,7 +96,7 @@
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  background-color: #ed3b44;
+  background-color: #00adb3;
   padding: 8px;
   z-index: 999;
   transition: background-color 0.3s ease-in-out;
@@ -104,7 +104,7 @@
 
 .go-top-button:hover,
 .go-top-button:focus-visible {
-  background-color: #e0373f;
+  background-color: #00adb5;
 }
 .go-top-button:active {
   background-color: #fafafa;
@@ -118,11 +118,11 @@
 
 .go-top-button:active .go-top-icon {
   background-color: transparent;
-  fill: #e0373f;
+  fill: #00adb5;
 }
 
 .go-top-icon:active {
-  fill: #e0373f;
+  fill: #00adb5;
 }
 
 @media only screen and (min-width: 768px) {
