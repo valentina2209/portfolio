@@ -1,11 +1,11 @@
 {
-  "name": "project-devmodern",
+  "name": "portfolio",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project-DevModern/",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -16,7 +16,7 @@
     "postcss-sort-media-queries": "^5.2.0",
     "vite": "^5.4.6"
   },
-  "author": "project-group-14",
+  "author": "Valentyna",
   "license": "ISC",
   "dependencies": {
     "@fontsource/inter-tight": "^5.2.5",
