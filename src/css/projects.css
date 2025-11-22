@@ -71,8 +71,9 @@
 }
 .see-project-btn {
   display: block;
+  text-align: center;
   margin-top: 32px;
-  padding: 18px 32px;
+  padding: 16px;
   background-color: #00adb5;
   border-style: none;
   border-radius: 60px;
@@ -147,7 +148,7 @@
     line-height: 1;
   }
   .see-project-btn {
-    padding: 18px 50px;
+    padding: 17px 25px;
     width: 177px;
     height: 55px;
   }
